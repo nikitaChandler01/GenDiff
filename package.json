@@ -1,11 +1,12 @@
 {
   "dependencies": {
-    "commander": "^10.0.1"
+    "commander": "^10.0.1",
+    "lodash": "^4.17.21"
   },
   "name": "hexlet-code",
   "description": "[![Actions Status](https://github.com/nikitaChandler01/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/nikitaChandler01/frontend-project-46/actions)",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "bin/gendiff.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +19,7 @@
     "eslint-plugin-import": "^2.27.5"
   },
   "bin": {
-    "gendiff": "bin/gendiff.js"
+    "gendiff": "bin/gendiff.js",
+    "gendiff ./src/file1.json ./src/file2.json": "index.js"
   }
 }
