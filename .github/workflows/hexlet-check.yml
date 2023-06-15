@@ -22,15 +22,9 @@ jobs:
         uses: hexlet/project-action@release
         with:
           hexlet-id: ${{ secrets.HEXLET_ID }}
-  test:
-    runs-on: ubuntu-latest
-    steps: 
-      - uses: actions/checkout@v3
+      - name: Install deps
+        run: make install
       - name: Jest tests
         run: make test
-  linter:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
       - name: EsLint tests
         run: make lint
