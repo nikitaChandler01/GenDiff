@@ -27,10 +27,10 @@ const buildDiff = (jsonFile1, jsonFile2) => {
   for (const item of entriesSorted2) {
     const [key, value] = item;
     if (!result.includes(` ${key}:`)) {
-      result = `${result}  + ${key}: ${value}\n}`;
+      result = `${result}  + ${key}: ${value}\n`;
     }
   }
-  return result;
+  return `${result}}`;
 };
 
 export default buildDiff;

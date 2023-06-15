@@ -1,10 +1,7 @@
 {
   "name": "Nikita",
-  "surname": "Berdnik",
-  "favourite movie": "Avatar",
-  "chad?": "Yes)",
   "sense of humor": "high-level",
   "age": "22",
-  "verbose": true,
+  "blue-eyes": true,
   "host": "hexlet.io"
 }
