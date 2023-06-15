@@ -26,5 +26,7 @@ jobs:
         run: make install
       - name: Jest tests
         run: make test
+      - name: Jest tests coverage
+        run: make test-coverage
       - name: EsLint tests
         run: make lint

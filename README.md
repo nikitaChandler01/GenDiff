@@ -1,4 +1,4 @@
-# Find Difference between to files
+# Find Difference between two files
 **This** utilite compares:
 
 + JSON files:
