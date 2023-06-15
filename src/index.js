@@ -1,7 +1,7 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import parseJsonFile from './parseJsonFile.js';
-import buildDiff from './buildDiff.js';
+import buildDiff from './buildDiff/buildDiff.js';
 
 const getDiff = (filepath1, filepath2) => {
   const __filename = fileURLToPath(import.meta.url);
