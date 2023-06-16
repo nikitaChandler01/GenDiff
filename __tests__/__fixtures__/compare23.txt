@@ -1,0 +1,9 @@
+{
+    host: hexlet.io
+  - timeout: 20
+  - verbose: true
+  + age: 22
+  + blue-eyes: true
+  + name: Nikita
+  + sense of humor: high-level
+}

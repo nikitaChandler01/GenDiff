@@ -1,0 +1,10 @@
+{
+  - age: 22
+  - blue-eyes: true
+    host: hexlet.io
+  - name: Nikita
+  - sense of humor: high-level
+  + follow: false
+  + proxy: 123.234.53.22
+  + timeout: 50
+}
