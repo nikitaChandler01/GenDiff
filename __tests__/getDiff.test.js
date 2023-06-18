@@ -11,8 +11,8 @@ describe('testJsonFiles', () => {
   const makePathToJsonFile = (filename) => path.resolve(__dirname, '__fixtures__', 'jsonFiles', filename);
 
   test('getDiff12', () => {
-    const actual12 = fs.readFileSync(makePathToTestFile('compare12.txt'), 'utf-8');
-    expect(getDiff(makePathToJsonFile('file1.test.json'), makePathToJsonFile('file2.test.json'))).toBe(actual12);
+    const actual12 = fs.readFileSync(makePathToTestFile('compare12.nested.txt'), 'utf-8');
+    expect(getDiff(makePathToJsonFile('file1.nested.test.json'), makePathToJsonFile('file2.test.json'))).toBe(actual12);
   });
   test('getDiff31', () => {
     const actual31 = fs.readFileSync(makePathToTestFile('compare31.txt'), 'utf-8');

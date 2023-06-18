@@ -1,5 +1,4 @@
-const isSameItem = (elem, array) => {
-  const [key1, value1] = elem;
+const isSameItem = (key, value, array) => {
   /* eslint-disable-next-line */
   for (const item of array) {
     const [key2, value2] = item;
