@@ -10,7 +10,8 @@
   "version": "1.0.0",
   "main": "bin/gendiff.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node ./src/index.js"
   },
   "author": "",
   "license": "ISC",

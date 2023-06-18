@@ -23,7 +23,7 @@ const buildDiff = (jsonFile1, jsonFile2) => {
             result = `${result}${formaterOfDif(key, obj1[key], ' ', counter)}`;
           } else {
             // Если не равны, то "ныряем" внутрь объектов и сравниваем
-            result = `{${key}: ${findDiff(obj1[key], obj2[key], counter + 1)}`;
+            result = `{\n${key}: ${findDiff(obj1[key], obj2[key], counter + 1)}${' '.repeat(counter + 1)}}\n`;
           }
           // Если хотя бы один не объект, то добавляем как есть
           // Оба значения существуют под ключом [key] поскольку мы еще в условии 18 строчки

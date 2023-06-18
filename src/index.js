@@ -4,6 +4,8 @@ import parseJsonFile from './parsers/parseJsonFile.js';
 import parseYamlFile from './parsers/parseYamlFile.js';
 import buildDiff from './buildDiff/buildDiff.js';
 
+
+
 const getDiff = (filepath1, filepath2) => {
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
