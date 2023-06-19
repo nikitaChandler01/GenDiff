@@ -1,6 +1,7 @@
 const isSameKey = (key, array) => {
   array.forEach((item) => {
-    if (item.includes[key]) return true;
+    const [keyOfArray,] = item;
+    if (keyOfArray === key) return true;
     return false;
   });
 };
