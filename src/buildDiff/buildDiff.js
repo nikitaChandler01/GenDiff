@@ -49,7 +49,6 @@ const buildDiff = (jsonFile1, jsonFile2) => {
     return acc;
   };
   result = `${findDiff(jsObj1, jsObj2, 1, result)}}`;
-  console.log(result);
   return result;
 };
 
