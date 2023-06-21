@@ -5,7 +5,9 @@
   
   [![asciicast](https://asciinema.org/a/aCCb2KdlsVzSvb4LLzgeeUZI0.svg)](https://asciinema.org/a/aCCb2KdlsVzSvb4LLzgeeUZI0)
 
-
++ Also you can compare JSON with YML files:
+  <em>Just type path to file or its name</em>
+  [![asciicast](https://asciinema.org/a/WwA4xcAfsDnu3iDwtJRmg63tu.svg)](https://asciinema.org/a/WwA4xcAfsDnu3iDwtJRmg63tu)
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/nikitaChandler01/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/nikitaChandler01/frontend-project-46/actions)

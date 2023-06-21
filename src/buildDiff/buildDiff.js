@@ -3,8 +3,6 @@ import formaterOfDif from './stylish.js';
 import compareFunc from './compareFunc.js';
 
 const buildDiff = (jsonFile1, jsonFile2) => {
-  const jsObj1 = jsonFile1;
-  const jsObj2 = jsonFile2;
   let result = '{\n';
 
   const findDiff = (obj1, obj2, counter, acc) => {
@@ -48,7 +46,7 @@ const buildDiff = (jsonFile1, jsonFile2) => {
     });
     return acc;
   };
-  result = `${findDiff(jsObj1, jsObj2, 1, result)}}`;
+  result = `${findDiff(jsonFile1, jsonFile2, 1, result)}}`;
   return result;
 };
 
