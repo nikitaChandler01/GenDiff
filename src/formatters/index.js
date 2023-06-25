@@ -1,11 +1,8 @@
 import stylish from './stylish.js';
 
+/* eslint-disable-next-line */
 const format = (tree, formatterName) => {
-  switch (formatterName) {
-    case 'stylish':
-      return stylish(tree);
-  }
-  return '';
+  if (formatterName === 'stylish') return stylish(tree);
 };
 
 export default format;
