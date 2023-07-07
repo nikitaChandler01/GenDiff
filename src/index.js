@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import path from 'path';
 import { fileURLToPath } from 'url';
 import parseFile from './parser.js';

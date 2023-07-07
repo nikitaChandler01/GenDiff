@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { Command } from 'commander';
 import buildDiff from '../src/index.js';
 
@@ -9,7 +8,5 @@ program
   .option('-f, --format <type>', 'output format', 'stylish')
   .argument('<filepath1>')
   .argument('<filepath2>')
-  .action((filepath1, filepath2, options) => {
-    console.log(buildDiff(filepath1, filepath2, options.format));
-  });
+  .action((filepath1, filepath2, options) => buildDiff(filepath1, filepath2, options.format));
 program.parse();

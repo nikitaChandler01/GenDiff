@@ -8,7 +8,7 @@
   "name": "@hexlet/code",
   "description": "[![Actions Status](https://github.com/nikitaChandler01/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/nikitaChandler01/frontend-project-46/actions)",
   "version": "1.0.0",
-  "main": "bin/gendiff.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "jest"
   },
@@ -22,6 +22,6 @@
     "jest": "^29.5.0"
   },
   "bin": {
-    "gendiff": "src/index.js"
+    "gendiff": "bin/gendiff.js"
   }
 }
