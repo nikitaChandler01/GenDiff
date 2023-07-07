@@ -3,7 +3,7 @@ import _ from 'lodash';
 const buildDiff = (jsonFile1, jsonFile2) => {
   const keys1 = Object.keys(jsonFile1);
   const keys2 = Object.keys(jsonFile2);
-  const allKeysSorted = _.union(keys1, keys2).sort();
+  const allKeysSorted = _.sortBy(_.union(keys1, keys2).map((item) => item));
   const result = allKeysSorted.map((key) => {
     if (!_.has(jsonFile1, key)) {
       return {
