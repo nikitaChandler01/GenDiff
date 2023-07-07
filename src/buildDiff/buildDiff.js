@@ -22,8 +22,8 @@ const buildDiff = (jsonFile1, jsonFile2) => {
     if (typeof jsonFile1[key] === 'object' && typeof jsonFile2[key] === 'object') {
       return {
         name: key,
-        children: buildDiff(jsonFile1[key], jsonFile2[key]),
         type: 'children',
+        children: buildDiff(jsonFile1[key], jsonFile2[key]),
       };
     }
     if (JSON.stringify(jsonFile1[key]) !== JSON.stringify(jsonFile2[key])) {
