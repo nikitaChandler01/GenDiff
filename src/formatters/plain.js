@@ -2,7 +2,7 @@ const stringify = (value) => {
   if (typeof value === 'object' && value !== null) {
     return '[complex value]';
   }
-  if (typeof value === 'boolean' || value === null) return String(value);
+  if (typeof value === 'boolean' || typeof value === 'number' || value === null) return String(value);
   return `'${value}'`;
 };
 
