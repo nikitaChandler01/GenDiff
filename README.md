@@ -9,6 +9,9 @@
   <em>Just type path to file or its name</em>
   [![asciicast](https://asciinema.org/a/WwA4xcAfsDnu3iDwtJRmg63tu.svg)](https://asciinema.org/a/WwA4xcAfsDnu3iDwtJRmg63tu)
 
++ If you want to see difference in other format write ```--format``` flag: 
+  [![asciicast](https://asciinema.org/a/595353.svg)](https://asciinema.org/a/595353)
+  
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/nikitaChandler01/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/nikitaChandler01/frontend-project-46/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/090881c618bd586b55a5/maintainability)](https://codeclimate.com/github/nikitaChandler01/frontend-project-46/maintainability)
