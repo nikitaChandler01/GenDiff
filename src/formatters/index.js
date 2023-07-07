@@ -4,9 +4,9 @@ import json from './json.js';
 
 /* eslint-disable-next-line */
 const format = (tree, formatterName) => {
-  if (formatterName === 'stylish') return stylish(tree);
   if (formatterName === 'plain') return plain(tree);
   if (formatterName === 'json') return json(tree);
+  return stylish(tree);
 };
 
 export default format;

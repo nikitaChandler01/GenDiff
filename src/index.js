@@ -4,7 +4,7 @@ import parseFile from './parser.js';
 import buildDiff from './buildDiff/buildDiff.js';
 import format from './formatters/index.js';
 
-const getDiff = (filepath1, filepath2, formatterName = 'stylish') => {
+const getDiff = (filepath1, filepath2, formatterName) => {
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
   const absolutePath1 = path.resolve(__dirname, '../__fixtures__', filepath1);
