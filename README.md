@@ -9,9 +9,14 @@
    ```
    make install
    ```
-  3. Utile compares JSON and YAML files. To compare, put them in ``__fixtures__``. After that you can use absolute path, relative path or only its filename! 
+  3. Util compares JSON and YAML files. To compare, put them in ``__fixtures__``. After that you can use absolute path, relative path or only its filename! 
    
-  4. Also utils supports three formatters (stylish is default). You can see how it works bellow:
+  4. Also util supports three formatters:
+     + stylish (is default)
+     + plain
+     + json
+  
+  You can see how it works bellow:
 
 __You can compare 2 JSON files:__
    ```
@@ -27,7 +32,9 @@ __You can compare JSON with YAML files:__
   [![asciicast](https://asciinema.org/a/WwA4xcAfsDnu3iDwtJRmg63tu.svg)](https://asciinema.org/a/WwA4xcAfsDnu3iDwtJRmg63tu)
 
 __You can choose the most usefull formatter for you!__
- just use ```--format``` flag: 
+
+just use ```--format``` flag: 
+
   [![asciicast](https://asciinema.org/a/595353.svg)](https://asciinema.org/a/595353)
 
   [![asciicast](https://asciinema.org/a/595370.svg)](https://asciinema.org/a/595370)
