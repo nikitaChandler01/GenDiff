@@ -40,7 +40,7 @@ just use ```--format``` flag:
   [![asciicast](https://asciinema.org/a/595370.svg)](https://asciinema.org/a/595370)
 
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/nikitaChandler01/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/nikitaChandler01/frontend-project-46/actions)
+[![hexlet-check](https://github.com/nikitaChandler01/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nikitaChandler01/frontend-project-46/actions/workflows/hexlet-check.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/090881c618bd586b55a5/maintainability)](https://codeclimate.com/github/nikitaChandler01/frontend-project-46/maintainability)
 
 ### CodeClimate test-coverage status:  
