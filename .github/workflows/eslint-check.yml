@@ -1,0 +1,20 @@
+name: eslint-check
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install deps
+        run: make install
+      - name: Jest tests
+        run: make test
+      - name: EsLint tests
+        run: make lint
+      - name: Test & publish code coverage
+        uses: paambaati/codeclimate-action@v4.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CODE_CLIMATE_ID }}
+        with:
+          coverageCommand: make test-coverage
+          debug: true
