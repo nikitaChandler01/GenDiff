@@ -10,18 +10,20 @@ const plain = (tree) => {
   const iter = (currentValue, path) => {
     const diffs = currentValue
       .filter(({ type }) => type !== 'unchanged')
-      .map((item) => {
-        const pathToProp = [...path, item.name];
+      .map(({
+        name, value, value1, value2, children, type,
+      }) => {
+        const pathToProp = [...path, name];
         const property = pathToProp.join('.');
-        switch (item.type) {
+        switch (type) {
           case '+':
-            return `Property '${property}' was added with value: ${stringify(item.value)}`;
+            return `Property '${property}' was added with value: ${stringify(value)}`;
           case '-':
             return `Property '${property}' was removed`;
           case 'changed':
-            return `Property '${property}' was updated. From ${stringify(item.value1)} to ${stringify(item.value2)}`;
+            return `Property '${property}' was updated. From ${stringify(value1)} to ${stringify(value2)}`;
           case 'children':
-            return iter(item.children, pathToProp);
+            return iter(children, pathToProp);
           default:
             throw new Error('Unknown type');
         }

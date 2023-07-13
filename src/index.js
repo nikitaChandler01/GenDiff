@@ -1,8 +1,8 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import parseFile from './parser.js';
-import buildDiff from './buildDiff/buildDiff.js';
-import format from './formatters/index.js';
+import buildDiff from './buildDiff.js';
+import formatDiff from './formatters/index.js';
 
 const getDiff = (filepath1, filepath2, formatterName) => {
   const __filename = fileURLToPath(import.meta.url);
@@ -12,7 +12,7 @@ const getDiff = (filepath1, filepath2, formatterName) => {
   const dataParse1 = parseFile(absolutePath1);
   const dataParse2 = parseFile(absolutePath2);
   const tree = buildDiff(dataParse1, dataParse2);
-  return format(tree, formatterName);
+  return formatDiff(tree, formatterName);
 };
 
 export default getDiff;

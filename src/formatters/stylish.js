@@ -22,21 +22,21 @@ const stringify = (data, depth) => {
 
 const stylish = (tree, depth = 1) => {
   const indents = createIndent(depth);
-
-  const items = tree.map((item) => {
-    const makeValue = stringify(item.value, depth + 1);
-
-    switch (item.type) {
+  const items = tree.map(({
+    name, value, value1, value2, type, children,
+  }) => {
+    const makeValue = stringify(value, depth + 1);
+    switch (type) {
       case '+':
-        return `${indents.openBracket}+ ${item.name}: ${makeValue}`;
+        return `${indents.openBracket}+ ${name}: ${makeValue}`;
       case '-':
-        return `${indents.openBracket}- ${item.name}: ${makeValue}`;
+        return `${indents.openBracket}- ${name}: ${makeValue}`;
       case 'changed':
-        return `${indents.openBracket}- ${item.name}: ${stringify(item.value1, depth + 1)}\n${indents.openBracket}+ ${item.name}: ${stringify(item.value2, depth + 1)}`;
+        return `${indents.openBracket}- ${name}: ${stringify(value1, depth + 1)}\n${indents.openBracket}+ ${name}: ${stringify(value2, depth + 1)}`;
       case 'unchanged':
-        return `${indents.openBracket}  ${item.name}: ${makeValue}`;
+        return `${indents.openBracket}  ${name}: ${makeValue}`;
       case 'children':
-        return `${indents.openBracket}  ${item.name}: ${stylish(item.children, depth + 1)}`;
+        return `${indents.openBracket}  ${name}: ${stylish(children, depth + 1)}`;
       default:
         throw new Error('Unknown type.');
     }
